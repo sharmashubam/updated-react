@@ -10,128 +10,71 @@ const Work = () => {
             </div>
             <div className='w-[85%] flex flex-col gap-12  mx-auto '>
                 {/* first */}
-                <div className=' flex flex-col xl:flex-row justify-between p-4'>
-                    <div className='xl:w-[50%] xl:h-[500px] h-[300px]  overflow-hidden'>
-                        <div className='w-full h-full relative'>
-                            <img className='w-full h-full object-cover hover:scale-110 hover:brightness-75 transition duration-300 ease-in-out' src='https://as2.ftcdn.net/v2/jpg/05/25/11/11/1000_F_525111169_c16k6AGCVLgdwwNKl6kkvsKzVNaOTCaM.jpg' />
-                        </div>
 
-                    </div>
-                    <div className='md:border-none my-2 xl:my-0 rounded-md shadow-2xl xl:w-[50%]'>
-                        <div className='w-full h-full justify-center text-black items-center flex flex-col'>
-                            <div className='text-center  w-[90%] xl:w-[80%] text-white my-4'>
-                                <p className='text-3xl font-bold w-fit border-b-4 border-teal-500 xl:mx-auto my-4 ml-2'>GETMOVIES</p>
-                                <p className='font-bold tborderext-lg'>AN ONLINE WEBSITE THAT HOLDS MOVIES AND TV SHOWS INFORMATION. WE CAN SEARCH FOR THE WOVIES AND CAN READ ABOUT THE DETAILS AND ALSO WATCH THE TRAILER OR CLIP</p>
-                            </div>
-                            <div className='w-[80%] '>
-                                <p className='text-2xl font-bold text-white border-b-2 w-fit border-teal-500'>Techstacks</p>
-                                <div className='my-4 '>
-                                    <ul className='grid grid-rows xl:flex gap-2 text-white '>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>HTML</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>TAILWIND CSS</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>JAVASCRIPT</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>REACTJS</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>TMBD API</li>
 
-                                    </ul>
+
+                <div class="h-fit w-full">
+                    <div class="mt-12 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+                        <div class="group relative mx-auto h-96 w-72 overflow-hidden rounded-sm">
+                            <img class="object-cover h-full w-full transition-all duration-300 ease-in-out group-hover:rotate-3 group-hover:scale-125" src="movie.png" />
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/90"></div>
+                            <div class="absolute inset-0 flex flex-col px-12 gap-4 items-center justify-center translate-y-[68%] transit ease-linear duration-300 group-hover:translate-y-0">
+                                <h1 class="text-3xl font-bold text-white border-b-4 border-teal-500">GETMOVIES</h1>
+                                <p class="text-white text-center font-bold text-sm ">THIS IS A ONLINE WEBSITE THAT GIVES DETAILS ABOUT THE MOVIES AND SHOWS THE TRAILER OR CLIPS OF THE MOVIE.</p>
+                                <div class="flex flex-row gap-4">
+                                    <div className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
+                                        <FaRegEyeSlash className='hover:fill-teal-600' size={30} />
+                                        <a href='https://get-movies-shubam.netlify.app/'>Live</a>
+                                    </div>
+                                    <a href='https://github.com/sharmashubam/tmbd-api-movie/tree/master' className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
+                                        <AiFillGithub className='hover:fill-teal-600' size={30} />
+                                        <span >Github</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div className='flex xl:mt-12 mb-6 gap-4'>
-                                <div className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
-                                    <FaRegEyeSlash className='hover:fill-teal-600' size={30} />
-                                    <span>Live Demo</span>
-                                </div>
-                                <a href='https://github.com/sharmashubam/tmbd-api-movie/tree/master' className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
-                                    <AiFillGithub className='hover:fill-teal-600' size={30} />
-                                    <span >Github Repo</span>
-                                </a>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* second */}
-                <div className=' flex flex-col xl:flex-row-reverse justify-between p-4'>
-                    <div className='xl:w-[50%] xl:h-[500px] h-[300px]  overflow-hidden'>
-                        <div className='w-full h-full relative'>
-                            <img className='w-full h-full object-cover hover:scale-110 hover:brightness-75 transition duration-300 ease-in-out' src='https://as2.ftcdn.net/v2/jpg/05/25/11/11/1000_F_525111169_c16k6AGCVLgdwwNKl6kkvsKzVNaOTCaM.jpg' />
                         </div>
 
-                    </div>
-                    <div className='md:border-none my-2 xl:my-0 rounded-md shadow-2xl xl:w-[50%]'>
-                        <div className='w-full h-full justify-center text-black items-center flex flex-col'>
-                            <div className='text-center  w-[90%] xl:w-[80%] text-white my-4'>
-                                <p className='text-3xl font-bold w-fit border-b-4 border-teal-500 xl:mx-auto my-4 ml-2'>cryptoSearch</p>
-                                <p className='font-bold tborderext-lg'>WEBSITE THAT GIVES THE INFORMATION ABOUT THE CRYPTO CURRENCY AND SOME TRENDING CRYPTO CURRENCIES</p>
-                            </div>
-                            <div className='w-[80%] '>
-                                <p className='text-2xl font-bold text-white border-b-2 w-fit border-teal-500'>Techstacks</p>
-                                <div className='my-4 '>
-                                    <ul className='grid grid-rows xl:flex gap-2 text-white '>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b]'>HTML</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b]'>TAILWIND CSS</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>JAVASCRIPT</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>REACTJS</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>CSS3</li>
-
-                                    </ul>
+                        <div class="group relative mx-auto h-96 w-72 overflow-hidden rounded-sm">
+                            <img class="object-cover h-full w-full transition-all duration-300 ease-in-out group-hover:rotate-3 group-hover:scale-125" src="cryptosearch.png" />
+                            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/90"></div>
+                            <div class="absolute inset-0 flex flex-col px-12 gap-4 items-center justify-center translate-y-[67%] transit ease-linear duration-300 group-hover:translate-y-0">
+                                <h1 class="text-3xl font-bold text-white border-b-4 border-teal-500">cryptoSearch</h1>
+                                <p class="text-white text-center font-bold text-sm ">WEBSITE THAT GIVES THE INFORMATION ABOUT THE CRYPTO CURRENCY AND SOME TRENDING CRYPTO CURRENCIES.</p>
+                                <div class="flex flex-row gap-4">
+                                    <div className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
+                                        <FaRegEyeSlash className='hover:fill-teal-600' size={30} />
+                                        <a href='https://crypto-search-shubam.netlify.app/'>Live</a>
+                                    </div>
+                                    <a href='https://github.com/sharmashubam/crypto-search/tree/master' className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
+                                        <AiFillGithub className='hover:fill-teal-600' size={30} />
+                                        <span >Github</span>
+                                    </a>
                                 </div>
                             </div>
-                            <div className='flex xl:mt-12 mb-6 gap-4'>
-                                <div className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
-                                    <FaRegEyeSlash className='hover:fill-teal-600' size={30} />
-                                    <span>Live Demo</span>
-                                </div>
-                                <a href='https://github.com/sharmashubam/crypto-search/tree/master' className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
-                                    <AiFillGithub className='hover:fill-teal-600' size={30} />
-                                    <span >Github Repo</span>
-                                </a>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* third */}
-
-                <div className=' flex flex-col xl:flex-row justify-between p-4'>
-                    <div className='xl:w-[50%] xl:h-[500px] h-[300px]  overflow-hidden'>
-                        <div className='w-full h-full relative'>
-                            <img className='w-full h-full object-cover hover:scale-110 hover:brightness-75 transition duration-300 ease-in-out' src='https://as2.ftcdn.net/v2/jpg/05/25/11/11/1000_F_525111169_c16k6AGCVLgdwwNKl6kkvsKzVNaOTCaM.jpg' />
                         </div>
 
-                    </div>
-                    <div className='md:border-none my-2 xl:my-0 rounded-md shadow-2xl xl:w-[50%]'>
-                        <div className='w-full h-full justify-center text-black items-center flex flex-col'>
-                            <div className='text-center  w-[90%] xl:w-[80%] text-white my-4'>
-                                <p className='text-3xl font-bold w-fit border-b-4 border-teal-500 xl:mx-auto my-4 ml-2'>GET WEATHER</p>
-                                <p className='font-bold tborderext-lg'>AN ONLINE WEBSITE THAT GIVES THE INFORMATION OG THE WEATHER</p>
-                            </div>
-                            <div className='w-[80%] '>
-                                <p className='text-2xl font-bold text-white border-b-2 w-fit border-teal-500'>Techstacks</p>
-                                <div className='my-4 '>
-                                    <ul className='grid grid-rows xl:flex gap-2 text-white '>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>HTML</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>TAILWIND CSS</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>JAVASCRIPT</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>REACTJS</li>
-                                        <li className='py-1 text-center px-2 font-bold border bg-[#2d2b2b] '>OPENWEATHER API</li>
 
-                                    </ul>
+                        <div class="group relative mx-auto h-96 w-72 overflow-hidden rounded-sm">
+                                <img class="object-cover h-full w-full transition-all duration-300 ease-in-out group-hover:rotate-3 group-hover:scale-125" src="weather.png" />
+                                <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/90"></div>
+                                <div class="absolute inset-0 flex flex-col px-12 gap-4 items-center justify-center translate-y-[63%] transit ease-linear duration-300 group-hover:translate-y-0">
+                                    <h1 class="text-3xl font-bold text-white border-b-4 border-teal-500">WEATHER</h1>
+                                    <p class="text-white text-center font-bold text-sm ">WEBSITE THAT ALLOWS TO FIND THE WEATHER OF A PARTICULAR PLACE</p>
+                                    <div class="flex flex-row gap-4">
+                                        <div className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
+                                            <FaRegEyeSlash className='hover:fill-teal-600' size={30} />
+                                            <a href='https://get-weather-shubam.netlify.app/'>Live</a>
+                                        </div>
+                                        <a href='https://github.com/sharmashubam/weather-react' className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
+                                            <AiFillGithub className='hover:fill-teal-600' size={30} />
+                                            <span >Github</span>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className='flex xl:mt-12 mb-6 gap-4'>
-                                <div className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
-                                    <FaRegEyeSlash className='hover:fill-teal-600' size={30} />
-                                    <span>Live Demo</span>
-                                </div>
-                                <a href='https://github.com/sharmashubam/weather-react' className='flex flex-col justify-center items-center border-b-2 border-teal-500 cursor-pointer px-4 my-2 font-bold text-white hover:text-teal-600'>
-                                    <AiFillGithub className='hover:fill-teal-600' size={30} />
-                                    <span >Github Repo</span>
-                                </a>
 
                             </div>
-                        </div>
+
                     </div>
                 </div>
 
