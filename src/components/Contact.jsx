@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import ScrollIntoView from 'react-scroll-into-view'
 
 const Contact = () => {
     const [form, setForm] = useState(false)
@@ -92,7 +93,7 @@ const Contact = () => {
 
                 :
                 <><div className='h-[200px]'>
-                    <div className="bg-green-100 rounded-md p-3 flex">
+                    <div className="bg-green-100 rounded-md p-3 flex justify-center">
                         <svg
                             class="stroke-2 stroke-current text-green-600 h-8 w-8 mr-2 flex-shrink-0"
                             viewBox="0 0 24 24"
@@ -106,9 +107,11 @@ const Contact = () => {
                         </svg>
 
                         <div className="text-green-700">
-                            <div class="font-bold text-2xl">Your message has been sent!</div>
+                            <div class="font-bold text-2xl">Sorry! Message has not sent!</div>
 
-                            <div className='text-xl'>Thanks fo reaching me!</div>
+                            <div className='text-xl flex gap-2'>Try to contact from top 
+                            <ScrollIntoView className='font-bold cursor-pointer border-b-2 border-black' selector='#top'>Links!</ScrollIntoView>
+                            </div>
                         </div>
                     </div>
                 </div></>}
